@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Calories par jour</string>
+    <string name="d_pense_nerg_tique_au_repos">Dépense énergétique : au repos</string>
+    <string-array name="gender">
+        <item>
+            Homme
+        </item>
+        <item>
+            Femme
+        </item>
+    </string-array>
+    <string-array name="level">
+        <item>
+            Légére
+        </item>
+        <item>
+            Modérée
+        </item>
+        <item>
+            Intense
+        </item>
+    </string-array>
+</resources>

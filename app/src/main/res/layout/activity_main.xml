@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:textDirection="ltr"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/radius"
+        android:drawableStart="@drawable/ic_info"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"
+        android:text="Remplissez les cinq mesures ci-dessous, le calcul des calories s'affichera automatiquement"
+        android:textColor="#565656"
+        android:textSize="14sp" />
+
+    ------------------------------------------------------------------
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ></LinearLayout>
+    <TextView
+
+        android:id="@+id/textView1"
+        android:layout_width="380dp"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="622dp"
+        android:background="@drawable/radius"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <Spinner
+        android:id="@+id/sp1"
+        android:layout_width="242dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="31dp"
+        android:background="#FFFFFF"
+        android:entries="@array/gender"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="42dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvSex"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="108dp"
+        android:background="#D6D6D6"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Votre Sex :"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="42dp" />
+    -----------------------------------------------------------------------------
+    <TextView
+
+        android:id="@+id/textView2"
+        android:layout_width="380dp"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="545dp"
+        android:background="@drawable/radius"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="340dp" />
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="185dp"
+        android:background="#D6D6D6"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Votre âge :"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="42dp" />
+    <EditText
+
+        android:id="@+id/Edage"
+        android:layout_width="242dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="31dp"
+        android:background="#FFFFFF"
+        android:entries="@array/gender"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="42dp"
+        android:inputType="numberDecimal" >
+
+
+    </EditText>
+
+
+    --------------------------------------------------------------------------------------
+
+
+
+    <TextView
+
+        android:id="@+id/textView3"
+        android:layout_width="380dp"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="468dp"
+        android:background="@drawable/radius"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="340dp" />
+    <TextView
+        android:id="@+id/tvPoids"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="262dp"
+        android:background="#D6D6D6"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Votre poids :"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="42dp" />
+
+    --------------------------------------------------------------------------------
+
+
+    <EditText
+
+        android:id="@+id/EdPoids"
+        android:layout_width="242dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFFFFF"
+        android:entries="@array/gender"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="42dp"
+        android:inputType="numberDecimal" >
+
+
+    </EditText>
+
+    <TextView
+
+        android:id="@+id/textView4"
+        android:layout_width="380dp"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="391dp"
+        android:background="@drawable/radius"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <Spinner
+        android:id="@+id/sp2"
+        android:layout_width="242dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFFFFF"
+        android:entries="@array/level"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="42dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvNiveu"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="339dp"
+        android:background="#D6D6D6"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="Niveau d'activité :"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="42dp" />
+    ----------------------------------------22222--------------------------------
+
+    <TextView
+
+        android:id="@+id/TvMessage"
+
+        android:layout_width="372dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="411dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="307dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+
+        android:text=""
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="42dp">
+
+
+    </TextView>
+
+
+    -----------------------------------------------------------------------------------------
+
+    <TextView
+
+        android:id="@+id/textView5"
+        android:layout_width="380dp"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="230dp"
+        android:background="@drawable/orange"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+
+    <TextView
+        android:id="@+id/tvCalorie"
+        android:layout_width="115dp"
+        android:layout_height="62dp"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="234dp"
+        android:background="#F87230"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:text="Calorie par jour : quotidienne"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="436dp" />
+
+    -----------------------------------------------------------------------
+
+    <TextView
+        android:id="@+id/TvCal"
+        android:layout_width="244dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="495dp"
+        android:layout_marginEnd="29dp"
+        android:background="@color/white"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="514dp"
+        />
+
+    <TextView
+
+        android:id="@+id/textViewdepense"
+        android:layout_width="380dp"
+        android:layout_height="68dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/orange"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+
+    <TextView
+        android:id="@+id/tvDense"
+        android:layout_width="115dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="157dp"
+        android:background="#F87230"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:text="@string/d_pense_nerg_tique_au_repos"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="516dp" />
+
+    <TextView
+        android:id="@+id/TvDep"
+        android:layout_width="244dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="514dp" />
+
+
+</RelativeLayout>
